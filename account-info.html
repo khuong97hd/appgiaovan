@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html lang="english">
+
+<head>
+    <title>Quản lý tài khoản</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/setting.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reponsive.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-4-sidebar-menu/assets/css/animate.css" />
+    <link rel="stylesheet" href="bootstrap-4-sidebar-menu/assets/css/style.css" />
+    <link rel="stylesheet" href="bootstrap-4-sidebar-menu/assets/css/media-queries.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="bootstrap-4-sidebar-menu/assets/js/scripts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.home-box-banner').bxSlider({
+                auto: true,
+                controls: false
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <!-- address -->
+    <div class="home-header-address">
+        <div class="home-header-address-detail">
+            <span>Trụ sở chính: 416 Xa lộ Hà Nội, Phường An Phú, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</span>
+            <span>|</span>
+            <span>Giờ làm việc: 8:00 - 17:00</span>
+        </div>
+        <div class="home-header-login-register">
+            <button class="home-header-register">
+                <a href="register.html">Đăng ký</a>
+            </button>
+            <button class="home-header-login">
+                <a href="login.html">Đăng nhập</a>
+            </button>
+        </div>
+    </div>
+    <!-- end of address -->
+    <!-- menu -->
+    <div class="home-header-menu">
+        <div class="home-header-menu-logo">
+            <a href="home.html"><img src="images/logo.png" /></a>
+        </div>
+        <nav class="navbar navbar-expand-sm home-header-menu-detail">
+            <div class="button-side-menu">
+                <!-- open sidebar menu -->
+                <a class="open-menu" href="#" role="button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Về chúng tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tuyển dụng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="sidebar">
+
+            <!-- close sidebar menu -->
+            <div class="dismiss">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+
+            <div class="logo">
+                <h3><a href="index.html"></a></h3>
+            </div>
+
+            <ul class="list-unstyled menu-elements">
+                <li class="active">
+                    <a class="scroll-link" href="#top-content"><i class="fa fa-home"></i> Trang chủ</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="#section-1"><i class="fa fa-cog"></i> Ưu đãi của tôi</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="#section-2"><i class="fa fa-user"></i> Tiện ích</a>
+                </li>
+                <li>
+                    <a class="scroll-link" href="#section-5"><i class="fa fa-envelope"></i> Giới thiệu</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="overlay"></div>
+    </div>
+    <!-- end of menu -->
+
+    <!-- login -->
+    <section class="login-box">
+        <div class="container py-5 h-100 order-box-wrapper">
+            <h6 style="font-weight: 400; font-size: 13px; color: #828282;">Trang chủ \ Tài khoản</h6>
+
+            <!-- order -->
+            <div class="account-box">
+                <div class="account-box-left">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item account-avatar">
+                                <div class="account-avatar-img">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                        style="width: 100%;" alt="Avatar" />
+                                    <div class="account-avatar-camera">
+                                        <a href="#"><i style="width:100%" class="fa fa-camera"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+
+                                <span style="">TTC Shop</span>
+                            </li>
+                            <li class="list-group-item active">
+                                <a class="nav-link" href="account-info.html"> <i style="color: #FF7075;" class="fa fa-user-o"
+                                        aria-hidden="true"></i>
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li class="list-group-item"><a class="nav-link" href="#"><i style="color: #FF7075;"
+                                        class="fa fa-bell" aria-hidden="true"></i>
+                                    Thông báo</a></li>
+                            <li class="list-group-item"><a class="nav-link"
+                                    href="account-change-password.html"><i style="color: #FF7075;"
+                                        class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                    Đổi mật khẩu</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="account-contact.html"><i
+                                        style="color: #FF7075;" class="fa fa-volume-control-phone"
+                                        aria-hidden="true"></i>
+                                    Liên hệ CSKH</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="account-policy.html"><i
+                                        style="color: #FF7075;" class="fa fa-book" aria-hidden="true"></i>
+                                    Điều khoản chính sách</a></li>
+                            <li data-toggle="modal" data-target="#modalDangXuat" class="list-group-item"><a
+                                    class="nav-link" href="#"><i style="color: #FF7075;" class="fa fa-sign-out"
+                                        aria-hidden="true"></i>
+                                    Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account-box-right">
+                    <div class="card">
+                        <ul class="list-group list-group-flush account-detail">
+                            <li class="list-group-item" data-toggle="modal" data-target="#modalThongTinTenTaiKhoan">
+                                <span>Tên tài khoản</span>
+                                <span>TTC Shop <i class="fa fa-pencil" aria-hidden="true"></i> </span>
+                            </li>
+                            <li class="list-group-item" data-toggle="modal" data-target="#modalListDiaChi">
+                                <span>Địa chỉ lấy hàng</span>
+                                <span>20 Nguyễn Thị Thập, phường Tân Phong, quận 7, Hồ Chí Minh <i class="fa fa-pencil"
+                                        aria-hidden="true"></i>
+                                </span></li>
+
+                        </ul>
+                        <ul class="list-group list-group-flush account-detail">
+                            <li class="list-group-item" data-toggle="modal" data-target="#modalListNganHang">
+                                <span>Tài khoản ngân hàng</span>
+                                <span><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end of search -->
+        </div>
+    </section>
+    <!-- end of login -->
+
+    <!-- footer -->
+    <div class="home-footer-download-app">
+        <div class="home-footer-menu-logo">
+            <a href="#"><img src="images/logo.png" /></a>
+        </div>
+        <div class="home-footer-menu-logo-right">
+            <a href="#"><img src="images/apple-chplay.png" /></a>
+        </div>
+    </div>
+    <div class="home-footer-info-top">
+        <div class="home-footer-info-top-item">
+            <p>Tên công ty:</p>
+            <p>Công ty TNHH TTC SHIP</p>
+        </div>
+
+        <div class="home-footer-info-top-item">
+            <p>Tên công ty:</p>
+            <p>Công ty TNHH TTC SHIP</p>
+        </div>
+
+        <div class="home-footer-info-top-item">
+            <p>Tên công ty:</p>
+            <p>416 Xa lộ Hà Nội, Phường An Phú,
+                Thành phố Thủ Đức, Thành phố Hồ Chí Minh</p>
+        </div>
+
+        <div class="home-footer-info-top-item">
+            <p>Mã số thuế:</p>
+            <p>0316944597</p>
+        </div>
+        <div class="home-footer-info-top-item">
+            <p>Chức vụ:</p>
+            <p>Tổng giám đốc</p>
+        </div>
+    </div>
+    <div class="home-footer-info-bottom">
+        <p>Công ty TNHH TTC SHIP</p>
+        <p><i style="color: #EC1C24;" class="fa fa-map-marker" aria-hidden="true"></i> Trụ sở chính: 416 Xa lộ Hà Nội,
+            Phường An Phú, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</p>
+        <p><i style="color: #EC1C24;" class="fa fa-envelope"></i> Công ty TNHH TTC SHIP</p>
+        <p><i style="color: #EC1C24;" class="fa fa-phone"></i> Công ty TNHH TTC SHIP</p>
+        <div class="home-footer-info-bottom-connect">
+            <div class="home-footer-info-bottom-contact">
+                <span>Kết nối với chúng tôi: </span>
+                <img src="images/fb.png">
+                <img src="images/YouTube - Original.png">
+                <img src="images/TikTok - Original.png">
+                <img src="images/zalo.png">
+            </div>
+
+            <div class="home-footer-info-bottom-bocongthuong">
+                <img src="images/dadangky-bocongthuong.png">
+                <img src="images/dathongbao-boccongthuong.png">
+            </div>
+        </div>
+    </div>
+    <!-- end of footer -->
+
+    <!-- Modal Ten tai khoan -->
+    <div class="modal fade" id="modalThongTinTenTaiKhoan" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modalThongTinDiaChi">
+                <div class="modal-body">
+                    <h5 class="text-uppercase text-center" id="exampleModalLabel">Thông tin tài khoản</h5>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Tên tài khoản</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Số điện thoại</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Địa chỉ</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Tỉnh/Thành phố, Quận/Huyện, Phường/Xã </label>
+                        <div class="row">
+                            <div class="col-md-4 mb-1">
+                                <select class="form-control" name="" id="">
+                                    <option value="">HCM</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                                <select class="form-control" name="" id="">
+                                    <option value="">HCM</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                                <select class="form-control" name="" id="">
+                                    <option value="">HCM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button>Lưu thông tin</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal Ten tai khoan -->
+
+    <!-- Modal List địa chỉ-->
+    <div class="modal fade" id="modalListDiaChi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modalListDiaChi">
+                <div class="modal-body">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tìm địa chỉ">
+                </div>
+                <form>
+                    <button data-toggle="modal" data-target="#modalThongTinDiaChi"
+                        class="create-address-box-wrapper-button-mobile"><i class="fa fa-plus"></i></button>
+                    <!-- item địa chỉ -->
+                    <div class="ListDiaChiItem">
+                        <div>
+                            <p><i style="color: #EC1C24;" class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ nhận
+                                hàng:
+                                <span>0911234560</span></p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> Nguyễn Nguyên
+                                | 0911234560</p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> 23 Hàm Nghi,
+                                Phường Vĩnh Ninh, Thành Phố Huế</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#" data-toggle="modal" data-target="#modalThongTinDiaChi">Chỉnh sửa</a>
+                                <a href="#" data-toggle="modal" data-target="#modalXoaDiaChi">Xóa địa chỉ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ListDiaChiItem">
+                        <div>
+                            <p><i style="color: #EC1C24;" class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ nhận
+                                hàng:
+                                <span>0911234560</span></p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> Nguyễn Nguyên
+                                | 0911234560</p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> 23 Hàm Nghi,
+                                Phường Vĩnh Ninh, Thành Phố Huế</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#" data-toggle="modal" data-target="#modalThongTinDiaChi">Chỉnh sửa</a>
+                                <a href="#" data-toggle="modal" data-target="#modalXoaDiaChi">Xóa địa chỉ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ListDiaChiItem">
+                        <div>
+                            <p><i style="color: #EC1C24;" class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ nhận
+                                hàng:
+                                <span>0911234560</span></p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> Nguyễn Nguyên
+                                | 0911234560</p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> 23 Hàm Nghi,
+                                Phường Vĩnh Ninh, Thành Phố Huế</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#" data-toggle="modal" data-target="#modalThongTinDiaChi">Chỉnh sửa</a>
+                                <a href="#" data-toggle="modal" data-target="#modalXoaDiaChi">Xóa địa chỉ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal -->
+
+    <!-- Modal List ngân hàng-->
+    <div class="modal fade" id="modalListNganHang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modalListDiaChi">
+                <div class="modal-body">
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Tìm thẻ ngân hàng">
+                </div>
+                <form>
+                    <button data-toggle="modal" data-target="#modalThongTinDiaChi"
+                        class="create-address-box-wrapper-button-mobile"><i class="fa fa-plus"></i></button>
+                    <!-- item địa chỉ -->
+                    <div class="ListDiaChiItem">
+                        <div>
+                            <p><i style="color: #EC1C24;" class="fa fa-map-marker" aria-hidden="true"></i> Tên ngân
+                                hàng:
+                                <span>0911234560</span></p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> Nguyễn Nguyên
+                                | 0911234560</p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> 23 Hàm Nghi,
+                                Phường Vĩnh Ninh, Thành Phố Huế</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#" data-toggle="modal" data-target="#modalThongTinNganHang">Chỉnh sửa</a>
+                                <a href="#" data-toggle="modal" data-target="#modalXoaNganHang">Xóa ngân hàng</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ListDiaChiItem">
+                        <div>
+                            <p><i style="color: #EC1C24;" class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ nhận
+                                hàng:
+                                <span>0911234560</span></p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> Nguyễn Nguyên
+                                | 0911234560</p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> 23 Hàm Nghi,
+                                Phường Vĩnh Ninh, Thành Phố Huế</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#" data-toggle="modal" data-target="#modalThongTinNganHang">Chỉnh sửa</a>
+                                <a href="#" data-toggle="modal" data-target="#modalXoaNganHang">Xóa ngân hàng</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ListDiaChiItem">
+                        <div>
+                            <p><i style="color: #EC1C24;" class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ nhận
+                                hàng:
+                                <span>0911234560</span></p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> Nguyễn Nguyên
+                                | 0911234560</p>
+                            <p><i style="color: #F8F8F8;" class="fa fa-map-marker" aria-hidden="true"></i> 23 Hàm Nghi,
+                                Phường Vĩnh Ninh, Thành Phố Huế</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#" data-toggle="modal" data-target="#modalThongTinNganHang">Chỉnh sửa</a>
+                                <a href="#" data-toggle="modal" data-target="#modalXoaNganHang">Xóa ngân hàng</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal list ngân hàng -->
+
+    <!-- Modal Thong Tin Ngân hàng -->
+    <div class="modal fade" id="modalThongTinNganHang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modalThongTinDiaChi">
+                <div class="modal-body">
+                    <h5 class="text-uppercase text-center" id="exampleModalLabel">Tài khoản ngân hàng</h5>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Chọn ngân hàng</label>
+                        <select class="form-control" name="" id="">
+                            <option value="">HCM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Họ và tên</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Số điện thoại</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Địa chỉ</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <button>Lưu thông tin</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal Thong Tin Ngân hàng-->
+
+    <!-- Modal Thong Tin Dia Chi -->
+    <div class="modal fade" id="modalThongTinDiaChi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modalThongTinDiaChi">
+                <div class="modal-body">
+                    <h5 class="text-uppercase text-center" id="exampleModalLabel">Thông tin địa chỉ</h5>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Họ và tên</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Số điện thoại</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Địa chỉ</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Tỉnh/Thành phố, Quận/Huyện, Phường/Xã </label>
+                        <div class="row">
+                            <div class="col-md-4 mb-1">
+                                <select class="form-control" name="" id="">
+                                    <option value="">HCM</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                                <select class="form-control" name="" id="">
+                                    <option value="">HCM</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-1">
+                                <select class="form-control" name="" id="">
+                                    <option value="">HCM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button>Lưu thông tin</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal Thong Tin Dia Chi -->
+
+    <!-- Modal xac nhan don hang-->
+    <div class="modal fade" id="modalXacNhanDonHang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modalThongTinDiaChi">
+                <div class="modal-body">
+                    <h5 class="text-uppercase text-center" id="exampleModalLabel">Xác nhận đơn hàng</h5>
+                    <p style="color:#828282" class="text-center">Vui lòng xác nhận thông tin bên dưới</p>
+                </div>
+                <form>
+                    <div class="card">
+                        <div class="text-uppercase card-header" style="color:#333333;font-weight: 700;
+                        font-size: 13px;">
+                            Người nhận
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <p>
+                                    Nguyễn Nguyên Nguyễn Nguyên
+                                </p>
+                                <p>
+                                    Nguyễn Nguyên Nguyễn Nguyên
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-uppercase card-header" style="color:#333333;font-weight: 700;
+                        font-size: 13px;">
+                            Người nhận
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <p>
+                                    Nguyễn Nguyên Nguyễn Nguyên
+                                </p>
+                                <p>
+                                    Nguyễn Nguyên Nguyễn Nguyên
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-uppercase card-header" style="color:#333333;font-weight: 700;
+                        font-size: 13px;">
+                            Người nhận
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <p>
+                                    Nguyễn Nguyên Nguyễn Nguyên
+                                </p>
+                                <p>
+                                    Nguyễn Nguyên Nguyễn Nguyên
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button data-toggle="modal" data-target="#modalXacNhanDonHangThanhCong" data-dismiss="modal">Xác
+                        nhận</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal Thong Tin Dia Chi -->
+
+    <!-- Modal xac nhan don hang thanh cong-->
+    <div class="modal fade" id="modalXacNhanDonHangThanhCong" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modalThongTinDiaChi">
+                <div class="modal-body text-center">
+                    <img src="images/delivered.png">
+                    <h5 class="text-uppercase text-center" id="exampleModalLabel">Tạo đơn hàng thành công</h5>
+                    <p style="color:#828282" class="text-center">Hãy ghi mã đơn hàng bên dưới vào kiện hàng để Shiper có
+                        thể phục vụ bạn tổt nhất nhé</p>
+                </div>
+                <form>
+                    <h4 class="text-center" style="color:#2F80ED; margin-bottom: 20px">2JWUD6UM25 <span><i
+                                class="fa fa-clone"></i></span></h4>
+                    <button data-dismiss="modal">Đồng ý</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal xac nhan don hang thanh cong -->
+
+    <!-- Modal xoa don hang-->
+    <div class="modal fade" id="modalXoaDiaChi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content modalThongTinDiaChi">
+                <div class="modal-body text-center">
+                    <h5 class="text-uppercase text-center" id="exampleModalLabel">Bạn có chắc muốn xoá
+                        địa chỉ nhận hàng này không ?</h5>
+                </div>
+                <form>
+                    <button data-dismiss="modal">Hủy bỏ</button>
+                    <p></p>
+                    <button data-dismiss="modal">Đồng ý</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal xoa don hang -->
+
+    <!-- Modal xoa don hang-->
+    <div class="modal fade" id="modalXoaNganHang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content modalThongTinDiaChi">
+                <div class="modal-body text-center">
+                    <h5 class="text-uppercase text-center" id="exampleModalLabel">Bạn có chắc muốn xoá
+                        cài đặt ngân hàng này không ?</h5>
+                </div>
+                <form>
+                    <button data-dismiss="modal">Hủy bỏ</button>
+                    <p></p>
+                    <button data-dismiss="modal">Đồng ý</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal xoa don hang -->
+
+    <!-- Modal dang xuat-->
+    <div class="modal fade" id="modalDangXuat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content modalThongTinDiaChi">
+                <div class="modal-body text-center">
+                    <h5 class="text-uppercase text-center" id="exampleModalLabel">Bạn có muốn đăng xuất khỏi trái đất ?
+                    </h5>
+                </div>
+                <form>
+                    <button data-dismiss="modal">Hủy bỏ</button>
+                    <p></p>
+                    <button data-dismiss="modal">Đồng ý</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of modal dang xuat -->
+</body>
+
+<script>
+    $('#submit-register').on('click', function () {
+        $('.login-box-child-otp').show();
+        $('.login-box-child').hide();
+
+    });
+</script>
+
+</html>
